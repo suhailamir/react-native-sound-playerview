@@ -82,7 +82,7 @@ export default class PlayerScreen extends React.Component {
       this.sound = new Sound(filepath, '', (error) => {
         if (error) {
           console.log('failed to load the sound', error);
-          Alert.alert('Notice', 'audio file error. (Error code : 1)');
+        //   Alert.alert('Notice', 'audio file error. (Error code : 1)');
           this.setState({playState: 'paused'});
         } else {
           this.setState({
@@ -100,7 +100,7 @@ export default class PlayerScreen extends React.Component {
         console.log('successfully finished playing');
       } else {
         console.log('playback failed due to audio decoding errors');
-        Alert.alert('Notice', 'audio file error. (Error code : 2)');
+        // Alert.alert('Notice', 'audio file error. (Error code : 2)');
       }
       this.setState({playState: 'paused', playSeconds: 0});
       this.sound.setCurrentTime(0);
