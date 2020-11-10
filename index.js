@@ -157,6 +157,14 @@ export default class PlayerScreen extends React.Component {
     return (
       <View
         style={{flex: 1, justifyContent: 'center', backgroundColor: 'black'}}>
+            <Image
+              source={require('./resources/back.png')}
+              style={{
+                width: 35,
+                height: 35,
+              }}
+            />
+
         <Image
           source={img_speaker}
           style={{
